@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white !important;
+}
+.logo_large{
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 21%;
+    height: 15%;
+}
+.credit{
+    user-select: none;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8em;
+    color: #ADADAD;
+    width: 100%;
+    text-align: center;
+}
+#new_room{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    height: 8%;
+    background: #913ED2;
+    border-radius: 19px;
+    font-family: "Raleway";
+    transition: 300ms box-shadow;
+}
+#new_room p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+#connexion_room{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    height: 8%;
+    background: #A5A5A5;
+    border-radius: 19px;
+    font-family: "Raleway";
+    transition: 300ms box-shadow;
+}
+#connexion_room p{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+@media screen and (max-width: 1000px){
+    #new_room, #connexion_room{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 730px){
+    #new_room, #connexion_room{
+        width: 50%;
+    }
+    .logo_large{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 540px){
+    #new_room, #connexion_room{
+        width: 70%;
+    }
+    .logo_large{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 355px){
+    #new_room, #connexion_room{
+        width: 80%;
+    }
+    #new_room p, #connexion_room p{
+        font-size: 1em;
+    }
+    .logo_large{
+        width: 50%;
+    }
+}
+#uuid_room:focus{
+    outline: none;
+}
