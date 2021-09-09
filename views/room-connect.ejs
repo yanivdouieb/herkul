@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.11/tailwind.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/themes@5.0.3/borderless/borderless.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Herkul - Conferencing and telephony in the cloud</title>
 </head>
-<body>
-    <div class="absolute logo_large" style="background: url('/img/logo_large.svg'); background-repeat: no-repeat; background-size: contain; background-position-x: center; background-position-y: center;"></div>
+
+<body id="body">
+    <div class="absolute logo_large"
+        style="background: url('/img/logo_large.svg'); background-repeat: no-repeat; background-size: contain; background-position-x: center; background-position-y: center;">
+    </div>
     <p class="uuid-txt">Room ID :</p>
     <input type="text" id="uuid_connection" class="ease-in-out hover:shadow-md focus:shadow-md" placeholder="XXX-XXX"></input>
-    <button id="login" class="disabled"><p>Join the room</p></button>
+    <p class="uuid-txt-pswd" style="display: block;">Password :</p>
+    <input type="password" id="uuid_pswd" class="ease-in-out hover:shadow-md focus:shadow-md"
+        style="top: 65% !important;display: block;" placeholder="••••••••••" autofocus></input>
+    <button id="login" class="disabled" style="top: 75% !important;">
+        <p>Join the room</p>
+    </button>
     <p class="credit">©️2021 - 2022 | Herkul</p>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/room-connect.js"></script>
 </body>
+
 </html>

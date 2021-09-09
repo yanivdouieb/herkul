@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/room-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.11/tailwind.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/themes@5.0.3/borderless/borderless.min.css">
+    <title>Herkul - Conferencing and telephony in the cloud</title>
+</head>
+<body>
+    <div class="absolute logo_large" style="background: url('/img/logo_large.svg'); background-repeat: no-repeat; background-size: contain; background-position-x: center; background-position-y: center;"></div>
+    <p class="uuid-txt">Room Name :</p>
+    <input type="text" id="room_name" class="ease-in-out hover:shadow-md focus:shadow-md" placeholder="Wednesday Book Club"></input>
+    <p class="uuid-txt-pswd">Room Password :</p>
+    <input type="password" id="room_password" class="ease-in-out hover:shadow-md focus:shadow-md" placeholder="••••••••••" style="top: 65%;"></input>
+    <button id="new_room" class="disabled" style="top: 75% !important;"><p>Create a room</p></button>
+    <p class="credit">©️2021 - 2022 | Herkul</p>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/room-new.js"></script>
+</body>
+</html>

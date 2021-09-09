@@ -25,7 +25,7 @@ body{
     width: 100%;
     text-align: center;
 }
-#uuid_connection, #uuid_pswd{
+#room_name{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,27 @@ body{
     text-transform: uppercase;
     border: 2px solid black;
 }
-#uuid_connection::placeholder, #uuid_pswd::placeholder{
+#room_password{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27%;
+    height: 8%;
+    background: white;
+    border-radius: 19px;
+    font-family: "Raleway";
+    transition: 300ms box-shadow;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 1.5em !important;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+#room_name::placeholder, #room_password::placeholder{
     position: absolute;
     color: rgb(131, 131, 131);
     top: 50%;
@@ -56,16 +76,16 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
-#uuid_connection:focus, #uuid_pswd:focus{
+#room_name:focus, #room_password:focus{
     outline: none;
 }
 @media screen and (max-width: 1000px){
-    #uuid_connection, #uuid_pswd, .uuid-txt, #login, .uuid-txt-pswd{
+    #room_name, .uuid-txt, #new_room, .uuid-txt-pswd,  #room_password{
         width: 40% !important;
     }
 }
 @media screen and (max-width: 730px){
-    #uuid_connection, #uuid_pswd, .uuid-txt, #login, .uuid-txt-pswd{
+    #room_name, .uuid-txt, #new_room, .uuid-txt-pswd,  #room_password{
         width: 50% !important;
     }
     .logo_large{
@@ -73,7 +93,7 @@ body{
     }
 }
 @media screen and (max-width: 540px){
-    #uuid_connection, #uuid_pswd, .uuid-txt, #login,.uuid-txt-pswd{
+    #room_name, .uuid-txt, #new_room, .uuid-txt-pswd,  #room_password{
         width: 70% !important;
     }
     .logo_large{
@@ -81,7 +101,7 @@ body{
     }
 }
 @media screen and (max-width: 355px){
-    #uuid_connection, #uuid_pswd, .uuid-txt, #login, .uuid-txt-pswd{
+    #room_name, .uuid-txt, #new_room, .uuid-txt-pswd,  #room_password{
         width: 80% !important;
     }
     .logo_large{
@@ -108,7 +128,7 @@ body{
     font-family: "Poppins";
     user-select: none;
 }
-#login{
+#new_room{
     position: absolute;
     top: 60%;
     left: 50%;
@@ -127,7 +147,7 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
-#uuid_connection:focus{
+#room_name:focus{
     border: 2px solid black;
 }
 .disabled{
